@@ -1,0 +1,131 @@
+\documentclass{spaceC}
+\author{d8ahaze}
+\class{2::4.calculus, pid06\_fB}
+\date{Start: 01.03.22; Last: \today; Finish: dd.mm.yy}
+
+\usepackage[T2A]{fontenc} % inclusion cyrillic encodings
+\usepackage[russian,english]{babel}
+\usepackage[default]{comfortaa}
+\usepackage{amsmath}
+%\usepackage{esdiff}
+%\usepackage{cleveref}
+
+\newcommand*{\ruenc}{\fontencoding{T2A}\selectfont} % ruenc: command for Russian encoding enablement
+\newcommand*{\latenc}{\fontencoding{T1}\selectfont} % latenc: command for Latin encoding enablement
+
+\title{CH1.Введение: C.PROBLEMS} % Chapter 1
+
+\graphicspath{{./frame/bin/}}
+
+\begin{document} \maketitle
+
+\csec
+
+\section{About} Даны множества $A, B, C$. С помощью операций объединения и пересе-чения записать множество, состоящее из элементов, принадлежих:
+
+1) всем трём множествам
+
+2) хотя бы одному множеству
+
+3) по крайней мере двум из этих множеств
+
+\section{Solution}
+Tools used: x, y.
+
+1) $N = A \cap B \cap C$
+
+2) By Sets:
+
+$N = A \cup B \cup C$
+
+By Maths Logic:
+
+$N = \forall x((x \in A) \lor (x \in B) \lor (x \in C))$
+
+3) $N = (x \in (A \cap B)) \lor (x \in (A \cap C)) \lor (x \in (B \cap C))$
+
+\vspace{5mm}
+\csec
+\section{About}\label{STPssuis}
+
+Доказать, что равнества: 1) $A \cup B = B$; 2) $A \cap B = A$; верны тогда и только тогда, когда $A \subset B$.
+
+\section{Solution}
+Tools used: If and only if
+
+\begin{aling*}
+  
+Tools used: x, y.
+
+$(a \Rightarrow b) \land (b \Rightarrow a)$
+
+\begin{align*}
+  A \subset B = \{ x \, \vert \, x \in A \Rightarrow x \in B \} \quad (a)
+\end{align*}
+
+\begin{align*}
+  A \cup B = \{ x \, \vert \, (x \in A) \lor (x \in B) \} \quad (b)
+\end{align*}
+
+a:
+\begin{tabular}{l c r}
+  A & B & $A \Rightarrow B$ \\
+  0 & 0 & 1 \\
+  0 & 1 & 1 \\
+  1 & 0 & 0 \\
+  1 & 1 & 1
+\end{tabular}
+b:
+\begin{tabular}{l c r}
+  A & B & $A \lor B$ \\
+  0 & 0 & 0 \\
+  0 & 1 & 1 \\
+  1 & 0 & 1 \\
+  1 & 1 & 1
+\end{tabular}
+c:
+\begin{tabular}{l c r}
+  A & B & $A \land B$ \\
+  0 & 0 & 0 \\
+  0 & 1 & 0 \\
+  1 & 0 & 0 \\
+  1 & 1 & 1
+\end{tabular}
+
+\csec
+
+\section{About} Определить в каком соотношении ($X \subset Y, X \supset Y, X = Y$) находятся множества $X, Y$, если:
+    
+\begin{tabular}{l c r}
+  a) $X = A \cup (B \setminus C)$ & $Y = (A \cup B) \setminus (A \cup C)$ \\
+  b) $X = \left ( A \cap B \right ) \setminus C$ & $Y = \left ( A \setminus C \right ) \cap \left ( B \setminus C \right )$ \\
+  c) $X = $ & $Y = $
+\end{tabular}
+
+\section{Clear Mind Solution}
+
+Task a.
+    
+  V1: Proof By Venn Diagram:
+    
+  \fig[0.5]{s1t7.png}{Visualization}{s1t7BIN}
+    
+  Значит, $X \supset Y$.
+    
+  V2: Proof By Mathematical Logic:
+    
+  Truth Table For X, Y...
+
+Task b.
+
+  V1: Proof By Venn Diagram:
+
+\section{Aware Mind Solution} Aware Mind Solution N Content zxc zxc zxc
+
+\section{3. Reference Solution} Content of Reference Solution
+
+\section{4. Analysis} Analysis of solution of this problem
+
+\section{5. Meta Analysis} Thinking errors, intelligence evalution.
+
+\end{document}

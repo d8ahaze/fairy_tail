@@ -1,0 +1,115 @@
+\documentclass{idea}
+\author{d8ahaze}
+\class{Volga IT Contest}
+\date{\today}
+
+\usepackage[T2A]{fontenc}
+\usepackage[russian,english]{babel}
+\usepackage[default]{comfortaa}
+\usepackage{amsmath}
+%\usepackage{esdiff}
+%\usepackage{cleveref}
+
+% use if font endcoding doesnt switch automatically
+\newcommand*{\ruenc}{\fontencoding{T2A}\selectfont}
+\newcommand*{\latenc}{\fontencoding{T1}\selectfont}
+
+\title{Ideas of The Program}
+
+\graphicspath{{./frame/bin/}}
+
+\begin{document} \maketitle
+
+\csec
+
+\section{Core} 
+
+\section{Shell}
+
+\section{Motivation}
+
+\vspace{5mm}
+\csec
+\section{About}\label{STPssuis}
+
+Доказать, что равнества: 1) $A \cup B = B$; 2) $A \cap B = A$; верны тогда и только тогда, когда $A \subset B$.
+
+\section{Solution}
+Tools used: If and only if
+
+\begin{aling*}
+  
+Tools used: x, y.
+
+$(a \Rightarrow b) \land (b \Rightarrow a)$
+
+\begin{align*}
+  A \subset B = \{ x \, \vert \, x \in A \Rightarrow x \in B \} \quad (a)
+\end{align*}
+
+\begin{align*}
+  A \cup B = \{ x \, \vert \, (x \in A) \lor (x \in B) \} \quad (b)
+\end{align*}
+
+a:
+\begin{tabular}{l c r}
+  A & B & $A \Rightarrow B$ \\
+  0 & 0 & 1 \\
+  0 & 1 & 1 \\
+  1 & 0 & 0 \\
+  1 & 1 & 1
+\end{tabular}
+b:
+\begin{tabular}{l c r}
+  A & B & $A \lor B$ \\
+  0 & 0 & 0 \\
+  0 & 1 & 1 \\
+  1 & 0 & 1 \\
+  1 & 1 & 1
+\end{tabular}
+c:
+\begin{tabular}{l c r}
+  A & B & $A \land B$ \\
+  0 & 0 & 0 \\
+  0 & 1 & 0 \\
+  1 & 0 & 0 \\
+  1 & 1 & 1
+\end{tabular}
+
+\csec
+
+\section{About} Определить в каком соотношении ($X \subset Y, X \supset Y, X = Y$) находятся множества $X, Y$, если:
+    
+\begin{tabular}{l c r}
+  a) $X = A \cup (B \setminus C)$ & $Y = (A \cup B) \setminus (A \cup C)$ \\
+  b) $X = \left ( A \cap B \right ) \setminus C$ & $Y = \left ( A \setminus C \right ) \cap \left ( B \setminus C \right )$ \\
+  c) $X = $ & $Y = $
+\end{tabular}
+
+\section{Clear Mind Solution}
+
+Task a.
+    
+  V1: Proof By Venn Diagram:
+    
+  \fig[0.5]{s1t7.png}{Visualization}{s1t7BIN}
+    
+  Значит, $X \supset Y$.
+    
+  V2: Proof By Mathematical Logic:
+    
+  Truth Table For X, Y...
+
+Task b.
+
+  V1: Proof By Venn Diagram:
+
+\section{Aware Mind Solution} Aware Mind Solution N Content zxc zxc zxc
+
+\section{3. Reference Solution} Content of Reference Solution
+
+\section{4. Analysis} Analysis of solution of this problem
+
+\section{5. Meta Analysis} Thinking errors, intelligence evalution.
+
+\end{document}
